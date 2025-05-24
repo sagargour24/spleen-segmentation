@@ -1,48 +1,37 @@
-# 🧬 SpleenNET - Medical Image Segmentation with Deep Learning
+# 🧬 SpleenNET - Deep Learning for Spleen Segmentation in CT Scans
 
-**SpleenNET** is a deep learning-based project for medical image segmentation, specifically focusing on identifying and segmenting the **spleen** in CT scans. This project uses a convolutional neural network (CNN) architecture to process 2D image slices and generate pixel-level predictions.
+**SpleenNET** is a convolutional neural network-based medical image segmentation model built to detect and isolate the spleen from abdominal CT images. It leverages a U-Net architecture and is trained on 2D slices to perform pixel-wise classification.
 
 ---
 
 ## 🧠 Project Overview
 
-- **Goal**: Accurately segment spleen regions from abdominal CT scan slices
-- **Approach**: Use a U-Net-like architecture for semantic segmentation
-- **Data**: Preprocessed 2D image slices derived from medical imaging datasets (e.g., LiTS or MSD)
+- **Goal**: Segment spleen regions from CT scan images with high accuracy  
+- **Architecture**: U-Net-like CNN with skip connections  
+- **Application**: Medical imaging, radiology assistance, organ volume analysis  
+
+---
+
+## 📂 Dataset
+
+- **Input**: 2D axial CT slices (grayscale)  
+- **Label**: Binary segmentation masks (1 = spleen, 0 = background)  
+- **Source**: Adapted from public datasets (e.g., Medical Segmentation Decathlon)  
+
+> *Note: Raw datasets are not included due to privacy/medical regulations.*
 
 ---
 
 ## 🏗️ Model Architecture
 
-The architecture is based on a modified **U-Net**, which includes:
-
-- **Encoder**: Sequential convolutional blocks with max pooling
-- **Bottleneck**: Dense convolutional layers with dropout
-- **Decoder**: Transposed convolutions with skip connections
-- **Output Layer**: `sigmoid` or `softmax` activation for binary/multi-class segmentation
-
----
-
-## 📊 Evaluation Metrics
-
-- **Dice Coefficient**
-- **IoU (Intersection-over-Union)**
-- **Pixel-wise Accuracy**
-- **Loss Function**: Dice Loss or Binary Cross Entropy + Dice
-
----
-
-## 🗂️ Dataset
-
-- **Input**: 2D CT slices in grayscale
-- **Labels**: Binary masks indicating spleen regions
-- **Size**: ~512x512 pixels (resized if needed)
-
-> *Dataset not included due to medical data restrictions. Please request access separately or use a public dataset like the Medical Segmentation Decathlon.*
+- **Encoder**: Convolution → BatchNorm → MaxPool  
+- **Decoder**: Transposed Convolution + Skip Connections  
+- **Loss Function**: Dice Loss + Binary Cross Entropy  
+- **Metrics**: Dice Coefficient, IoU, Accuracy  
 
 ---
 
 ## 🛠️ Requirements
 
 ```bash
-pip install numpy matplotlib opencv-python tensorflow scikit-image
+pip install numpy matplotlib opencv-python scikit-image tensorflow
