@@ -31,6 +31,30 @@
 
 ---
 
+## Training Performance
+
+<!-- 📌 IMAGE PLACEHOLDER: Training curve (loss & IoU) -->
+
+<sub>Replace images/loss_accuracy_curve.png with your actual training performance plot.</sub>
+
+---
+
+## Sample Outputs
+
+<!-- 📌 IMAGE PLACEHOLDER: Mask overlay on CT -->
+
+<sub>Replace images/spleen_segments.png with overlay of predicted vs. ground truth masks on CT image.</sub>
+
+---
+
+## Input|Ground_Truth|Prediction
+
+<!-- 📌 IMAGE PLACEHOLDER: 3-panel comparison -->
+
+<sub>Replace images/spleen_segments_2.png with side-by-side panels showing input CT, ground truth mask, and predicted mask.</sub>
+
+---
+
 ## 🛠️ Requirements
 
 ```bash
