@@ -33,25 +33,20 @@
 
 ## Training Performance
 
-<!-- 📌 IMAGE PLACEHOLDER: Training curve (loss & IoU) -->
-
-<sub>Replace images/loss_accuracy_curve.png with your actual training performance plot.</sub>
+<p align="center"> <img src="images/loss_accuracy_curve.png" alt="Loss and IoU Curves" width="700"> </p>
 
 ---
 
 ## Sample Outputs
 
-<!-- 📌 IMAGE PLACEHOLDER: Mask overlay on CT -->
-
-<sub>Replace images/spleen_segments.png with overlay of predicted vs. ground truth masks on CT image.</sub>
+🩻 Overlay: Predicted Mask vs Ground Truth Mask
+<p align="center"> <img src="images/spleen_segments.png" alt="Predicted vs Ground Truth Masks Overlay" width="700"> </p>
 
 ---
 
 ## Input|Ground_Truth|Prediction
 
-<!-- 📌 IMAGE PLACEHOLDER: 3-panel comparison -->
-
-<sub>Replace images/spleen_segments_2.png with side-by-side panels showing input CT, ground truth mask, and predicted mask.</sub>
+<p align="center"> <img src="images/spleen_segments_2.png" alt="Triple Comparison View" width="700"> </p>
 
 ---
 
